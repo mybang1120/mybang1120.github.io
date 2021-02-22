@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="shotcut icon" href="favicon.jpg">
+  <title>something!!!</title>
+  <script type="text/javascript">
+    window.addEventListener('load',init);
+    function init(){
+      let some1 = document.getElementById("some1");
+      let some2 = document.getElementById("some2");
+      let some3 = document.getElementById("some3");
+      some1.addEventListener('mouseover', showingSome);
+      some2.addEventListener('mouseover', showingSome);
+      some3.addEventListener('mouseover', showingSome);
+      some1.addEventListener('mouseout', hidingSome);
+      some2.addEventListener('mouseout', hidingSome);
+      some3.addEventListener('mouseout', hidingSome);
+
+      function showingSome(){
+        this.style.color="#f8edf6";
+      }  
+      function hidingsome(){
+        this.style.color="#ffff00";
+      }
+    }
+  </script>
+  <style>
+    h1{
+      font-size: 27px;
+      background: -webkit-linear-gradient(rgb(248, 237, 246), rgb(255, 255, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration:none;
+    }
+    body {
+      position: absolute;
+      color:#f8edf6;
+      background-color: #1f1d1d;
+      width: 100vw;
+      left: 100px;
+      top: 100px;
+      font-size: 20px;
+      font-family: Helvetica;
+      line-height: 140%;
+      text-align: left;
+      z-index: 1;
+    }
+ 
+    #main1:hover {
+      color: white;
+      background: -webkit-linear-gradient(#eee, rgb(209, 175, 175));
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: #ffff00 wavy underline;
+      }
+    #main1:visited {
+      color: rgb(31, 29, 29);
+      text-decoration: yellow wavy underline;
+    }
+    #chandeliers:link{
+      color: rgb(31, 29, 29);
+      text-decoration: yellow dotted underline;
+    }
+    #chandeliers:hover{
+      color: white;
+      background: -webkit-linear-gradient(#eee, rgb(209, 204, 175));
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: yellow wavy underline;
+    }
+    #chandeliers:visited{
+      color:rgb(31, 29, 29);
+      text-decoration: yellow wavy underline;
+    }
+    #pencils:link{
+      color: rgb(31, 29, 29);
+      text-decoration: yellow wavy line-through;
+    }
+    #pencils:hover{
+      color: white;
+      background: -webkit-linear-gradient(#eee, rgb(209, 175, 175));
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: yellow wavy underline;
+    }
+    #pencils:visited{
+      color:rgb(31, 29, 29);
+      text-decoration: yellow line-through;
+    }
+    #some1{
+      color:rgb(31, 29, 29);
+    }
+    #some2{
+      color:rgb(31, 29, 29);
+    }
+    #some3{
+      color:rgb(31, 29, 29);
+    }
+    #con{
+      font-family: 'Noto Serif SC', serif;
+      color: yellow;
+      font-size: 24px;
+      font-style: italic
+    }
+    
+    #talk:link{
+      position: absolute;
+      color: yellow;
+      width: 30vw;
+      right: 12vw;
+      top: 30vh;
+      font-size: 50px;
+      font-family: 'Noto Serif SC', serif;
+      line-height: 140%;
+      text-align: right;
+      font-style: italic;
+      text-decoration: #f8edf6 wavy underline;
+      z-index: 1;
+    }
+    #talk:hover{
+      color: white;
+      background: -webkit-linear-gradient(#eee, rgb(209, 175, 175));
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: #ffff00 wavy underline;
+    }
+    #talk:visited{
+      color: yellow;
+      text-decoration: #f8edf6 wavy underline;
+    }
+    img {
+      position: fixed;
+      top: 0px;
+      right: 10px;
+      height: 100vh;
+      opacity: 1;
+      z-index: -10;
+    }
+
+    #long{
+      width:60vw;
+    }
+    </style>
+    </head>
+    <h1><a id=amazon href="https://www.amazon.com/Humble-Masterpieces-Everyday-Marvels-Design/dp/0060838310">Humble Masterpieces</a></h1>
+    <body>
+      <br>
+      <!--1st paragraph from "Humble Masterpiece"-->
+      <div id=div1>Everything is designed <a id=main1 href="https://www.youtube.com/watch?v=4kg9LasvLFE&ab_channel=BlondieClips">  one way or another. </a> <br><span>Some objects are designed well, while others are not;</span> </div><br>
+      <div id=long><span id=some1>some</span> are designed pretentiously, others unassumingly; <br><span id=some2>some</span> are designed to optimize materials and techniques, while others are waste full; <br><span id=some3>some</span> are approachable and understandable, others instead trade on their unattainability. </div>
+      <br>
+      <div id=long>Design takes them all in, from <a id=chandeliers href="https://www.google.com/search?q=chandeliers&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjD2bG_j_TuAhWNdd8KHRkUBmgQ_AUoAXoECAIQAw&biw=1680&bih=791">chandeliers</a> to <a id=pencils href="https://www.youtube.com/watch?v=HR3Hmo_Uq3Y&ab_channel=RelaxingASMR">pencils</a>, from airplanes to computer screens, from the interior of a theater to the receipt at a department store's check out. While some objects naturally attract our attention for their extraordinary character and desirability - an eccentric and expensive pair of sneakers, for instance, or a gleaming sports car - many others are so apparently ordinary as to go unnoticed. Every day we use dozens of them, from elastic bands to Band-Aids, erasers, and mascara wands. If they work well, chances are we won't pay them much attention. </div>
+      <br>
+      <div id=long>However, in spite of their modest price and demure presence, some of these things are <span id=con>true masterpieces of the art of design</span> and <span id=con>deserve our unconditional admiration.</span></div>
+      <div id=talkDiv></div><a id=talk href="https://www.youtube.com/embed/-bdf1NnDZ8M">Watching Paola Antonelli's Talk</a></div>
+      <img src="bg.gif">
+      <!--
+      <a href="https://minybang.com/"><img src="youdidit.gif"></a>
+      <iframe src="https://www.youtube.com/embed/-bdf1NnDZ8M"></iframe>
+      -->
+    </body>
+  </html>
