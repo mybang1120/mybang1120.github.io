@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="shotcut icon" href="favicon.jpg">
+  <title>Humble Masterpieces</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+            <script src="jquery.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('load',init);
+    function init(){
+      let some1 = document.getElementById("some1");
+      let some2 = document.getElementById("some2");
+      let some3 = document.getElementById("some3");
+      some1.addEventListener('mouseover', showingSome);
+      some2.addEventListener('mouseover', showingSome);
+      some3.addEventListener('mouseover', showingSome);
+      some1.addEventListener('mouseout', hidingSome);
+      some2.addEventListener('mouseout', hidingSome);
+      some3.addEventListener('mouseout', hidingSome);
+
+      function showingSome(){
+        this.style.color="#5C7CAE";
+        this.style.opacity="1"
+      }  
+      function hidingsome(){
+        this.style.color="#5C7CAE";
+        this.style.opacity="1"
+
+      }
+    }
+  </script>
+  <style>
+
+    body {
+      position: absolute;
+      color:#f8edf6;
+      background-color: #cfcfcf;
+      width: 90vw;
+      left: 6vw;
+      top: 10vh;
+      font-size: 20px;
+      font-family: Helvetica;
+      line-height: 140%;
+      text-align: left;
+    
+      /* z-index: 1; */
+    }
+    #humbleTitle{
+      font-size: 27px;
+      color: #25d399;
+      font-weight: bold;
+      mix-blend-mode: multiply;
+    }
+    #blondie:link {
+      color: #DFDFDF;
+      font-family: Helvetica;
+      text-decoration: #ffff00 underline;
+      }
+
+    #blondie:hover {
+      background: blue;
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: #ffff00 wavy underline;
+      }
+    #blondie:visited {
+      color: #DFDFDF;
+      text-decoration: yellow wavy underline;
+    }
+    #chandeliers:link{
+      color: rgb(31, 29, 29);
+      text-decoration: yellow dotted underline;
+    }
+    #chandeliers:hover{
+      background: rgb(31, 29, 29);;
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: yellow wavy underline;
+    }
+    #chandeliers:visited{
+      color:#DFDFDF;
+      text-decoration: yellow wavy underline;
+    }
+    #pencils:link{
+      color:white;
+      text-decoration: yellow wavy line-through;
+    }
+    #pencils:hover{
+      background: purple;
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: yellow wavy underline;
+    }
+    #pencils:visited{
+      color:white;
+      text-decoration: yellow line-through;
+    }
+    #some1{
+      color:#cfcfcf;
+      opacity: 0;
+    }
+    #some2{
+      color:#cfcfcf;
+      opacity: 0;
+    }
+    #some3{
+      color:#cfcfcf;
+      opacity: 0;
+    }
+    #con{
+      font-family: 'Noto Serif SC', serif;
+      color: yellow;
+      font-size: 24px;
+      font-style: italic
+    }
+    
+    #talk:link{
+      position: absolute;
+      color: #ffff00;
+      width: 30vw;
+      right: 1vw;
+      top: 30vh;
+      font-size: 50px;
+      font-family: 'Noto Serif SC', serif;
+      line-height: 140%;
+      text-align: right;
+      font-style: italic;
+      text-decoration: #f8edf6 wavy underline;
+      z-index: 1;
+      mix-blend-mode: multiply;
+    }
+    #talk:hover{
+      background: rgb(7, 84, 226);
+      font-family: 'Noto Serif SC', serif;
+      font-style: italic;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: #ffff00 wavy underline;
+      mix-blend-mode: multiply;
+    }
+    #talk:visited{
+      color: #ffff00;
+      text-decoration: #f8edf6 wavy underline;
+      mix-blend-mode: multiply;
+    }
+    img {
+      position: fixed;
+      top: 0px;
+      right: 10px;
+      height: 100vh;
+      opacity: 1;
+      z-index: -10;
+    }
+    #long1{
+      width:60vw;
+      color:#06C1DC;
+      mix-blend-mode: multiply; 
+      opacity:0;
+    }
+    #long2{
+      width:60vw;
+      color:#06C1DC;
+      mix-blend-mode: multiply; 
+      opacity:0;
+    }
+    #long3{
+      width:60vw;
+      color:#06C1DC;
+      mix-blend-mode: multiply;
+      opacity:0; 
+    }
+    #dot1{
+      mix-blend-mode: multiply;
+    }
+    #dot2{
+      mix-blend-mode: multiply;
+      top: 20vh;
+      max-width: 100%;
+      height: auto;
+    }
+    #dot3{
+      mix-blend-mode: multiply;
+      top: 40vh;
+      max-width: 100%;
+      height: auto;
+    }
+    </style>
+    </head>
+    <div id=humbleTitle>Humble Masterpieces</div>
+    <body>
+      <br>
+      <!--1st paragraph from "Humble Masterpiece"-->
+      <div id=div1>Everything is designed <span><a id=blondie href="https://www.youtube.com/watch?v=4kg9LasvLFE&ab_channel=BlondieClips">  one way or another. </a></span>  <br><span>Some objects are designed well, while others are not;</span> </div><br>
+      <div id=long1><span id=some1>some</span> are designed pretentiously, others unassumingly; <br><span id=some2>some</span> are designed to optimize materials and techniques, while others are waste full; <br><span id=some3>some</span> are approachable and understandable, others instead trade on their unattainability. </div>
+      <br>
+      <div id=long2>Design takes them all in, from <a id=chandeliers href="https://www.google.com/search?q=chandeliers&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjD2bG_j_TuAhWNdd8KHRkUBmgQ_AUoAXoECAIQAw&biw=1680&bih=791">chandeliers</a> to <a id=pencils href="https://www.youtube.com/watch?v=HR3Hmo_Uq3Y&ab_channel=RelaxingASMR">pencils</a>, from airplanes to computer screens, from the interior of a theater to the receipt at a department store's check out. While some objects naturally attract our attention for their extraordinary character and desirability - an eccentric and expensive pair of sneakers, for instance, or a gleaming sports car - many others are so apparently ordinary as to go unnoticed. Every day we use dozens of them, from elastic bands to Band-Aids, erasers, and mascara wands. If they work well, chances are we won't pay them much attention. </div>
+      <br>
+      <div id=long3>However, in spite of their modest price and demure presence, some of these things are <span>true masterpieces of the art of design</span> and <span>deserve our unconditional admiration.</span></div>
+      <div id=talkDiv></div><a id=talk href="https://www.youtube.com/embed/-bdf1NnDZ8M">Watching Paola Antonelli's Talk</a></div>
+      <img id=dot1 src="bg.gif">
+      <img id=dot2 src="green_dot.gif">
+      <img id=dot3 src="pink_dot.gif">
+      <!--
+      <a href="https://minybang.com/"><img src="youdidit.gif"></a>
+      <iframe src="https://www.youtube.com/embed/-bdf1NnDZ8M"></iframe>
+      -->
+    </body>
+  </html>
