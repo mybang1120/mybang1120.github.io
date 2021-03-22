@@ -1,15 +1,10 @@
 <html>
     <head>
+        <title>A-Frame</title>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-        <script src="https://unpkg.com/aframe-text-geometry-component/dist/aframe-text-geometry-component.min.js"></script> 
-        <script src="myfont.typeface.js"></script> 
         <script>
-            // var boxE1 = document.querySelector('a-box');
-            // boxE1.addEventListener('mouseenter', function(){
-            //     boxE1.setAttribute('scale', {x:2, y:2, z:2 })
-            // });
-            AFRAME.registerComponent('scale-on-mouseenter', {
+             AFRAME.registerComponent('scale-on-mouseenter', {
                 schema: {
                     to: {default: '2.5 2.5 2.5', type: 'vec3'}
                 },
@@ -24,46 +19,39 @@
     </head>
     <body>
         <a-scene>
-            <a-assets>
-                <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
-                <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
-                <img id="boxTexture" src="sprinkles.jpeg">
-                <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"> 
-                <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">    
-                <audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay preload></audio>
-            </a-assets>
-            
-            <!-- <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"> -->
+            <a-assets></a-assets>
             <a-box 
-                src="#boxTexture" 
+                color="#0054FF" 
                 position="0 2 -5" 
                 rotation="0 45 45" 
-                scale="2 2 2"
-                animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true" 
-                animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
-                animation-mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave">
-                <a-sphere position="1 0 3"></a-sphere>
+                scale="1 1 1"
+                animation__position="property: object3D.position.y; to: 3; dir: alternate; dur: 2000; loop: true"
+            >
+              <a-cone
+                        position="0 2 -1"
+                        side="double"
+                        scale="0.3 0.5 0.3"
+                        color="#edfff2"
+                        animation="property: rotation; to: 360 360 360; loop: true; dur: 8000"
+                        >
+              </a-cone>
             </a-box>
-            <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"></a-plane> -->
-            <a-entity
-                mixin="boldFont"
-                text-geometry="value: Hello, A-Frame!; color: #BBB"
-                position="-0.9 0.2 -3"
-                scale="1.5 1.5 1.5">
-            </a-entity>
-            <a-entity text-geometry="value: What's up"></a-entity>
-            <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
+          <a-cylinder 
+                      color="#fcdb03" 
+                      position="1.4 3 -5" 
+                      height="2"
+                      radius="0.4"
+                      segments-radial="30"
+                      open-ended="false"
+                      side="double"
+                      animation="property: rotation; to: 0 360 360; loop: true; dur: 10000">
+          </a-cylinder>
 
-            <a-camera>
-                <a-cursor></a-cursor>
-            </a-camera>
-            <!-- <a-sky src="#skyTexture"></a-sky> -->
-            <a-light type="ambient" color="#445451"></a-light>
-            <a-light type="point" intensity="2" position="2 4 4"></a-light>
-            <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true" position="-3 1 -4"></a-sound>
-            <a-sky color="#222"></a-sky>
-            <!-- <a-entity environment="preset: forest; dressingAmoung: 500"></a-entity> -->
-            <!-- <a-entity id="box" geometry="primitive: box" material="color: red"></a-entity> -->
+          <a-light type="ambient" color="#FFFDF4" ></a-light>
+          <a-light type="directional" position="0 0 0" rotation="-90 0 0" target="#directionaltarget">
+            <a-entity id="directionaltarget" position="0 0 -1"></a-entity>
+          </a-light>
+          <a-sky color="#FEE7E7"></a-sky>
             
         </a-scene>
     </body>
