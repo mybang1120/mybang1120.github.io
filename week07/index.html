@@ -2,6 +2,8 @@
     <head>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+        <script src="https://unpkg.com/aframe-text-geometry-component/dist/aframe-text-geometry-component.min.js"></script> 
+        <script src="myfont.typeface.js"></script> 
         <script>
             // var boxE1 = document.querySelector('a-box');
             // boxE1.addEventListener('mouseenter', function(){
@@ -23,6 +25,8 @@
     <body>
         <a-scene>
             <a-assets>
+                <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+                <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
                 <img id="boxTexture" src="sprinkles.jpeg">
                 <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"> 
                 <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">    
@@ -42,9 +46,13 @@
             </a-box>
             <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"></a-plane> -->
             <a-entity
-                text="value: Hello, A-Frame!; color: #BBB"
+                mixin="boldFont"
+                text-geometry="value: Hello, A-Frame!; color: #BBB"
                 position="-0.9 0.2 -3"
-                scale="1.5 1.5 1.5"></a-entity>
+                scale="1.5 1.5 1.5">
+            </a-entity>
+            <a-entity text-geometry="value: What's up"></a-entity>
+            <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
 
             <a-camera>
                 <a-cursor></a-cursor>
