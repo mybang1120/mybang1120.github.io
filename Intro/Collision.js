@@ -181,13 +181,13 @@ Matter.Events.on(mouseConstraint, "mousedown", function(eve){
                 if(bodies[j].vertices[0].x<mouse.position.x && mouse.position.x<bodies[j].vertices[1].x && bodies[j].vertices[0].y<mouse.position.y && mouse.position.y<bodies[j].vertices[2].y){
                     if(j == 4){
                         console.log(bodies[j]);
-                        window.open("https://www.minyoungbang.com/#AR-VR","_self")
+                        window.open("https://www.minyoungbang.com/Works#AR-VR","_self")
                     }else if(j == 5){
                         console.log(bodies[j].id);
-                        window.open("https://www.minyoungbang.com/#UX","_self")
+                        window.open("https://www.minyoungbang.com/Works#UX","_self")
                     }else if(j == 6){
                         console.log(bodies[j].id);
-                        window.open("https://www.minyoungbang.com/#Motion","_self")
+                        window.open("https://www.minyoungbang.com/Works#Motion","_self")
                     }
                 }
             }
