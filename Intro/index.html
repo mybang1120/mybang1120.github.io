@@ -1,0 +1,90 @@
+<!--License: https://bit.ly/3GjrtVF--><!-- License information -->
+<!DOCTYPE html><!-- Document type declaration -->
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <img id = "logo" src="src/logo2.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="line-in-middle"></div>
+        <div class="left-content">
+            <div class="box-container">
+                <div class="text1">Hello!👋</div>
+            
+                <!-- </span>
+                    a product designer who loves to build playful connection between technology and people.
+                    I previously worked at a South Korean version of Spotify, <a href="https://kakaoent.com/" target="_blank" style="text-decoration-line: underline; color:black;">Kakao Entertainment</a>, as a UX motion designer for 4+ years and most recently worked as a product designer for AR experiences at <a href="https://about.meta.com/realitylabs/" target="_blank" style="text-decoration-line: underline;color:black;">Meta Reality Labs</a>. -->
+            </div>
+            
+            <div class="box-container2">
+                <!-- <svg class="arc" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="100%,0 100, 300 300"></polyline>
+                </svg> -->
+                <div>
+                    I’m <span id="name">Minyoung</span>, a product designer who loves to build playful connection between technology and people.<br><br>
+
+                    I previously worked at a South Korean version of Spotify, <a href="https://kakaoent.com/" target="_blank" style="text-decoration-line: underline;">Kakao Entertainment</a>, as a UX motion designer for 4+ years and most recently worked as a product designer for AR experiences at <a href="https://about.meta.com/realitylabs/" target="_blank" style="text-decoration-line: underline;">Meta Reality Labs</a>.</div>
+            </div>
+            <div class="bottom-link"><a href="minybang@gmail.com">Email</a>, <a href="https://www.linkedin.com/in/minyoung-bang-00515a141/">LinkedIn</a>, <a href="https://drive.google.com/file/d/167QXYvXjpc2WZV93R2Y2LWyLmj9YVjxU/view?usp=sharing">Resume</a> </div>
+        </div>
+        <div class="right-content">                
+            <canvas id="mattercanvas" style="height: 100%;"></canvas>
+            <img class="curve" style = "width:23vw; height:auto;" src="src/line.png"/>
+            <div class="curve" style="position:absolute;border-radius: 100%;width:25vw;height: 25vw;margin:0px; top:0px; left:0px; background: black;"></div>
+            <svg class="curve" style="width:60%; position:absolute; top:0px; left:0px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425.45 349.25">
+                <polygon points="425.45 174.63 123 0 123 81.21 0 81.21 0 268.04 123 268.04 123 349.25 425.45 174.63"/>
+            </svg> 
+         <!--    <div class="curve" style="position: absolute;top:0px;left:0px;">
+                <div class="bottom-link"><a href="minybang@gmail.com">Email</a></div>
+            </div>
+            <div class="curve" style="position: absolute;top:0px;left:0px;">
+                <div class="bottom-link"><a href="https://www.linkedin.com/in/minyoung-bang-00515a141/">LinkedIn</a></div>
+            </div>
+            <div class="curve" style="position: absolute;top:0px;left:0px;">
+                <div class="bottom-link"><a href="https://drive.google.com/file/d/167QXYvXjpc2WZV93R2Y2LWyLmj9YVjxU/view?usp=sharing">Resume</a> </div>
+            </div> -->
+            <div class = "tooltip" style="visibility: hidden;">See AR/VR Work</div>
+            <div class = "tooltip" style="visibility: hidden;">See UX Design Work</div>
+            <div class = "tooltip" style="visibility: hidden;">See Motion Design Work</div>
+
+            <!-- <div class="right-bottom"> 
+                <p class="preview">See AR/VR work</p>
+               <div class="icon-list"> 
+                    <div class="icon">
+                        <div class="tooltip">AR/VR</div>
+                        <img src="src/icon1.png" style="width:60px; cursor: pointer;">
+                    </div>
+                    <div class="icon">
+                        <div class="tooltip">UX</div>
+                        <img src="src/icon1.png" style="width:60px; cursor: pointer;">
+                    </div>
+                    <div class="icon">
+                        <div class="tooltip">Motion</div>
+                        <img src="src/icon1.png" style="width:60px; cursor: pointer;">
+                    </div>
+                </div>                
+            </div> --> 
+        </div> 
+        <div class = "radial-gradient" style="background: radial-gradient(rgb(49, 255, 12) 0%, rgba(255, 255, 255,0) 30%);"></div>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script src="matter.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/matter-dom-plugin@1.0.0/build/matter-dom-plugin.min.js"></script>
+        <script src="gsap.min.js"></script>
+        <script>
+           /* $(document).mousemove(function (event) {
+                windowWidth = $(window).width();
+                windowHeight = $(window).height();
+                mouseXpercentage = Math.round(event.pageX/windowWidth*100);
+                mouseYpercentage = Math.round(event.pageX/windowHeight*100);
+
+                $('.radial-gradient').css('background', 'radial-gradient(at '+ mouseXpercentage+'% '+mouseYpercentage+'%, #4af311,#2c2d2c)');
+            });*/
+          
+            
+        </script>
+        <script src="Collision.js"></script>
+       <!--  <script src="test.js"></script> -->
+    </body>
+</html>

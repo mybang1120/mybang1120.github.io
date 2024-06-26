@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "matter-dom-plugin": "^1.0.0"
+  }
+}
