@@ -1,0 +1,39 @@
+<!--License: https://bit.ly/3GjrtVF--><!-- License information -->
+<!DOCTYPE html><!-- Document type declaration -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        </div> 
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+
+let width = $(window).width();
+let height = $(window).height();
+let vmin = Math.min(width, height);
+function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+var styleElem = document.head.appendChild(document.createElement("style"));
+
+$(document).mousemove(function (event) {
+    windowWidth = $(window).width();
+    windowHeight = $(window).height();
+    mouseXpercentage = Math.round(255/windowWidth*event.pageX);
+    mouseYpercentage = Math.round(255/windowHeight*event.pageY);
+    contrastX = 255-mouseXpercentage;
+    contrastY = 255-mouseYpercentage;
+    bodyBackground = 'rgb('+contrastX+',170,'+contrastY+')'
+    bodyBackground2 = 'rgb('+contrastX+',150,'+contrastY+')';
+
+    $('body').css('background', bodyBackground2);
+});
+
+            
+        </script>
+    </body>
+</html>
